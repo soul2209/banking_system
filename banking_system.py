@@ -368,6 +368,5 @@ class BankSystem:
 # ─────────────────────────────────────────────────
 #  ENTRY POINT
 # ─────────────────────────────────────────────────
-if __name__ == "__main__":
-    system = BankSystem()
-    system.run()
+system = BankSystem()
+system.run()
