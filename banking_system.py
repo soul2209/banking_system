@@ -199,7 +199,7 @@ class BankAccount:
             f"==============================\n"
         )
 
-        with open(filename, "w") as f:
+        with open(filename, "w", encoding="utf-8") as f:
             f.write(receipt)
 
         print(f"  🧾 Receipt saved: {filename}")
@@ -219,7 +219,7 @@ class BankAccount:
 
         filename = f"account_{self.account_number}.txt"
 
-        with open(filename, "w") as f:
+        with open(filename, "w", encoding="utf-8") as f:
 
             f.write(f"Name: {self.name}\n")
             f.write(f"Account Number: {self.account_number}\n")
